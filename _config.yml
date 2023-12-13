@@ -30,9 +30,38 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  BranLim
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+
+minimal_mistakes_skin: "dark" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+author:
+  name: "Brandon Lim"
+  location: Singapore
+
+defaults:
+  #_posts
+  - scope: 
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      related: true
+      show_date: true
+      date_format: "%d-%m-%Y"
+  #_pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      related: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
