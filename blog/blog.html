@@ -4,6 +4,19 @@ permalink: /blog/
 collection: blog
 ---
 
-Welcome to my blog where I share my opinions, thoughts and any other random stuff I can think off.
+This is where you will find my opinions, thoughts and any other random stuff I can think of.
 
 
+{% capture written_label %}'None'{% endcapture %}
+
+{% for collection in site.collections %}
+    {% unless collection.output == false or collection.label == "posts" %}
+        {% capture label %}{{ collection.label }}{% endcapture %}
+    {% endunless %}
+    {% assign documents = collection.docs %}
+    {% for post in documents reversed%}
+        {% unless collection.output == false %}
+            {% include archive-single.html %}
+        {% endunless %}
+    {% endfor %}
+{% endfor %}
