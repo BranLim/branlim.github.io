@@ -1,7 +1,7 @@
 ---
 title: First Post
-permalink: /blog/first-post
-taxonomy: blog
+permalink: /blog/:title
+collection: blog
 ---
 
 This marks the first post of the new website. 

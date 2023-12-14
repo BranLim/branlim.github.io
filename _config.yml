@@ -39,18 +39,30 @@ author:
   name: "Brandon Lim"
   location: Singapore
 
+collections:
+  blog:
+    output: true
+    permalink: /:collection/:path
+
+include: ["_pages"]
+
 defaults:
-  #_posts
-  - scope: 
-      path: "/blog/"
+  - scope:
+      path: ""
       type: posts
     values:
       layout: single
       author_profile: true
       read_time: true
-      related: true
       show_date: true
       date_format: "%d-%m-%Y"
+  #blog
+  - scope: 
+      path: ""
+      type: blog
+    values:
+      layout: single
+      author_profile: true
   #_pages
   - scope:
       path: ""
@@ -67,8 +79,6 @@ defaults:
       layout: single
       author_profile: true
 
-
-include: ["_pages", "_blog"]
 
 # Exclude from processing.
 # The following items will not be processed, by default.
