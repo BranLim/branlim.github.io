@@ -82,10 +82,11 @@ defaults:
       related: false
   - scope:
       path: ""
-      type: "home"
+      type: home
     values:
       layout: single
       author_profile: true
+
 
 
 # Exclude from processing.
