@@ -35,6 +35,8 @@ plugins:
 
 minimal_mistakes_skin: "dark" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+future: true
+
 author:
   name: "Brandon Lim"
   location: Singapore
