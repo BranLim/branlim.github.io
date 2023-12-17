@@ -10,12 +10,10 @@ header:
     tagline: Software/Quality Engineer & Writer
     show_overlay_excerpt: true
 layout: splash
-feature_row:
-  - title: 
-    image_path: "https://1drv.ms/i/s!AiaG4QhusNBSolZhSLs7ysC-PNFO"
-    excerpt: "Hey, welcome to my official site. My name is Brandon Lim and I work as a full-stack Software Engineer with a focus on Quality based in Singapore."
+intro:
+  - title: Who am I? 
+    excerpt: "<p>My name is Brandon Lim. I work as a full-stack Software Engineer with a focus on crafting software according to Quality standards. </p> <p>When I'm not coding, I will be writing both non-fiction/fiction content. <br/>And, I am based in Singapore.</p>"
 ---
 
-{% include feature_row type="left" %}
-
+{% include feature_row id="intro" type="left" %}
 

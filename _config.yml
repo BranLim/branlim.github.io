@@ -33,7 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-minimal_mistakes_skin: "dark" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "air" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 #To allow future dates (from the perspective of GitHub Action)
 future: true
