@@ -12,7 +12,7 @@ header:
 layout: splash
 feature_row:
   - title: 
-    image_path: "https://1drv.ms/i/s!AiaG4QhusNBSolZhSLs7ysC-PNFO?e=ciEcMg"
+    image_path: "https://1drv.ms/i/s!AiaG4QhusNBSolZhSLs7ysC-PNFO"
     excerpt: "Hey, welcome to my official site. My name is Brandon Lim and I work as a full-stack Software Engineer with a focus on Quality based in Singapore."
 ---
 
