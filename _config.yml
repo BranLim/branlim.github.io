@@ -52,8 +52,11 @@ collections:
   tech:
     output: true
     permalink: /:collection/:path
+  creative_writing:
+    output: true
+    permalink: /:collection/:path
 
-include: ["_pages", "blog", "swe", "tech"]
+include: ["_pages", "blog", "swe", "tech", "creative_writing"]
 
 defaults:
   #posts

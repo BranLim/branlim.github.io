@@ -7,3 +7,5 @@ main:
   url: "/swe/"
 - title: "Tech"
   url: "/tech/"
+- title: "Creative Writing"
+  url: "/creativewriting/"
