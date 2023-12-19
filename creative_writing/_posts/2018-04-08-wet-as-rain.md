@@ -4,6 +4,7 @@ permalink: /creativewriting/:title
 collection: creative_writing
 category: creative_writing
 date: 2018-04-08
+excerpt: A poem about rain
 ---
 
 Ominous clouds rolling across the white canvas, coming to a halt above.

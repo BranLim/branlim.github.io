@@ -4,6 +4,7 @@ permalink: /swe/:title
 collection: swe
 category: swe
 date: 16 December 2023
+excerpt: An article on testing
 ---
 
 Software testing is an important step during its development lifecycle. It ensures that the software function or operate as what the stakeholders wanted, which contribute to the perception of quality software. Failure to properly test a software can lead to disastrous consequences, especially if the software is running in an environment where lives are stake or is responsible for the financial health of an organisation or nation.
