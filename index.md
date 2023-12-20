@@ -17,3 +17,34 @@ intro:
 
 {% include feature_row id="intro" type="left" %}
 
+## Latest Posts
+
+{% assign sweCollection = site.collections | where: "label", "swe" %}
+{% assign creativeCollection = site.collections | where: "label", "creative_writing" %}
+{% assign techCollection = site.collections | where: "label", "tech" %}
+{% assign blogCollection = site.collections | where: "label", "blog" %}
+
+
+{% if blogCollection.size == 0 %}
+    No Blog Posts
+{% else %}
+    {% for post in blogCollection reversed limit:1 %}
+        {% include posts_summary_single.html %}
+    {% endfor %}
+{% endif %}
+
+{% if sweCollection.size == 0 %}
+    No Software Engineering Posts
+{% else %}
+    {% for post in sweCollection reversed limit:1 %}
+        {% include posts_summary_single.html %}
+    {% endfor %}
+{% endif %}
+
+{% if techCollection.size == 0 %}
+    No Tech Posts
+{% else %}
+    {% for post in techCollection reversed limit:1 %}        
+        {% include posts_summary_single.html %}        
+    {% endfor %}
+{% endif %}
