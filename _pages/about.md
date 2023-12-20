@@ -38,4 +38,18 @@ Here are some of the software and tools I have used as part of my development pr
 6. GitKraken/SourceTree
 7. Postman
 
+## As a Writer...
 
+Other than writing codes at work, I spend quite a substantial amount of my time preparing and writing documentations. 
+
+I believe deeply in capturing information and knowledge so that future engineers will be able to understand why certain decisions were made.
+
+And during my free time I write my own thoughts, opinions, findings and many others on the blog and social media.
+
+Here are some of the software I used to do my writing:
+
+1. JIRA
+2. Confluence
+3. Wikis (e.g. Azure Devops)
+4. iA Writer
+5. Microsoft Word
