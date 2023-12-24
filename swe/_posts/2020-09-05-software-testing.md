@@ -3,7 +3,7 @@ title: "Software Testing: What is it, Why do we need it and what are the differe
 permalink: /swe/:title
 collection: swe
 category: swe
-date: 16 December 2023
+date: 05 September 2020
 excerpt: An article on testing
 ---
 
