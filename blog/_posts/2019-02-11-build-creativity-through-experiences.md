@@ -1,5 +1,5 @@
 ---
-title: Build your creativity through experiences
+title: "Build your creativity through experiences"
 permalink: /blog/:title
 collection: blog
 category: blog
