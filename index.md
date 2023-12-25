@@ -21,3 +21,22 @@ intro:
 
 ## Latest Posts
 
+{% for collection in site.collections %}
+    {% unless collection.output == false %}
+        {% assign blogDocuments = collection.docs | where_exp: "item", "item.category == 'blog'" %}
+        {% assign techDocuments = collection.docs | where_exp: "item", "item.category == 'tech'" %}
+        {% assign sweDocuments = collection.docs | where_exp: "item", "item.category == 'swe'" %}
+
+        {% for post in blogDocuments reversed limit:1 %}
+            {% include posts_summary_single.html %}
+        {% endfor %}
+
+         {% for post in techDocuments reversed limit:1 %}
+            {% include posts_summary_single.html %}
+        {% endfor %}
+
+        {% for post in sweDocuments reversed limit:1 %}
+            {% include posts_summary_single.html %}
+        {% endfor %}
+    {% endunless %}
+{% endfor %}
