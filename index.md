@@ -19,24 +19,29 @@ intro:
 
 <br/>
 
-## Latest Posts
+# Latest Posts
 
 {% for collection in site.collections %}
     {% unless collection.output == false %}
         {% assign blogDocuments = collection.docs | where_exp: "item", "item.category == 'blog'" %}
         {% assign techDocuments = collection.docs | where_exp: "item", "item.category == 'tech'" %}
         {% assign sweDocuments = collection.docs | where_exp: "item", "item.category == 'swe'" %}
+        {% assign creativeDocuments = collection.docs | where_exp: "item", "item.category == 'creative_writing'" %}
 
         {% for post in blogDocuments reversed limit:1 %}
-            {% include posts_summary_single.html %}
+            {% include posts_summary_single.html category='Blog' %}
         {% endfor %}
 
          {% for post in techDocuments reversed limit:1 %}
-            {% include posts_summary_single.html %}
+            {% include posts_summary_single.html category='Tech' %}
         {% endfor %}
 
         {% for post in sweDocuments reversed limit:1 %}
-            {% include posts_summary_single.html %}
+            {% include posts_summary_single.html category='Software Engineering' %}
+        {% endfor %}
+        
+        {% for post in creativeDocuments reversed limit:1 %}
+            {% include posts_summary_single.html category='Creative Writing' %}
         {% endfor %}
     {% endunless %}
 {% endfor %}
